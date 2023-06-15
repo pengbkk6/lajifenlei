@@ -1,0 +1,13 @@
+<!-- 语音识别 -->
+<view class='ai_root'>
+    <image src='/image/speech.png' class='ai_img' 
+    bindtouchstart='onTouchStart' bindtouchend='onTouchEnd' />
+    <text class='ai_txt'>长按语音识别</text>
+</view>
+<view wx:if="{{canRecordStart}}" class="speak_style">
+    <image wx:if="{{j==1}}" class="sound_style" src="/image/speech_1.png"></image>
+    <image wx:if="{{j==2}}" class="sound_style" src="/image/speech_2.png"></image>
+    <image wx:if="{{j==3}}" class="sound_style" src="/image/speech_3.png"></image>
+    <image wx:if="{{j==4}}" class="sound_style" src="/image/speech_4.png"></image>
+    <image wx:if="{{j==5}}" class="sound_style" src="/image/speech_5.png"></image>
+</view>

@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/news/news",
+    "pages/detail/detail",
+    "pages/video/video",
+    "pages/videoDetail/videoDetail",
+    "pages/requirement/requirement",
+    "pages/camera/camera",
+    "pages/sound/sound",
+    "pages/sort/sort",
+    "pages/sortList/sortList",
+    "pages/huishou/huishou",
+    "pages/search/search",
+    "pages/ranking/ranking",
+    "pages/questions/questions",
+    "pages/errorQuestions/errorQuestions",
+    "pages/zhengquelv/zhengquelv",
+    "pages/me/me",
+    "pages/change/change",
+    "pages/collection/collection",
+    "pages/collectionVideo/collectionVideo"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#2db5a1",
+    "navigationBarTitleText": "垃圾分类",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "image/home_0.jpg",
+        "selectedIconPath": "image/home_1.jpg"
+      },
+      {
+        "pagePath": "pages/sort/sort",
+        "text": "垃圾分类",
+        "iconPath": "image/tab.png",
+        "selectedIconPath": "image/tabok.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "新闻",
+        "iconPath": "image/classify_0.jpg",
+        "selectedIconPath": "image/classify_1.jpg"
+      },
+      {
+        "pagePath": "pages/questions/questions",
+        "text": "答题",
+        "iconPath": "image/order_0.jpg",
+        "selectedIconPath": "image/order_1.jpg"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "image/my_0.jpg",
+        "selectedIconPath": "image/my_1.jpg"
+      }
+    ],
+    "color": "#000000",
+    "selectedColor": "#2db5a1",
+    "borderStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

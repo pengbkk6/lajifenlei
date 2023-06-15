@@ -1,0 +1,14 @@
+.title {
+    margin: 15rpx;
+    font-size: 45rpx;
+}
+
+.item {
+    margin: 10rpx 40rpx;
+    color: gray;
+    border-bottom: 1px solid gray;
+}
+
+.item_left {
+    margin-right: 20rpx;
+}

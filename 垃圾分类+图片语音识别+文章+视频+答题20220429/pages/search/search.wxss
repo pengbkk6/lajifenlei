@@ -1,0 +1,87 @@
+page {
+  background: gainsboro;
+}
+
+/* 搜索区域 */
+.search_root {
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx;
+  /* 设置上下居中 */
+  align-items: center;
+  margin-bottom: 5rpx;
+  background: white;
+}
+
+.search_input {
+  flex: 1;
+  height: 65rpx;
+  border: 1px solid var(--themeColor);
+  border-radius: 30rpx;
+  padding-left: 30rpx;
+}
+
+.search_icon {
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 20rpx;
+}
+
+/* 顶部导航栏 */
+.tabs_root {
+  display: flex;
+  background: white;
+}
+
+.tabs_item {
+  height: 80rpx;
+  line-height: 80rpx;
+  flex: 1;
+  text-align: center;
+  border-bottom: 8rpx solid gainsboro;
+}
+
+.select_tab {
+  color: var(--themeColor);
+  border-bottom: 8rpx solid var(--themeColor);
+}
+
+/* 垃圾列表 */
+.refuse_item {
+  padding: 15rpx 30rpx;
+  border-bottom: 1px solid gainsboro;
+  background: white;
+}
+
+.refuse_item_type {
+  color: red;
+  font-size: 35rpx;
+}
+
+/* 文章列表 */
+.item {
+  display: flex;
+  padding: 15rpx;
+  border-bottom: 1px solid gainsboro;
+  background: white;
+}
+
+.item_img {
+  width: 120rpx;
+  height: 120rpx;
+  min-width: 120rpx;
+  margin-right: 15rpx;
+}
+
+.item_title {
+  width: 580rpx;
+  /* 超过一行,省略号 */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.item_type {
+  color: gray;
+  margin-top: 10rpx;
+}

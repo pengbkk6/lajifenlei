@@ -1,0 +1,58 @@
+<!-- 搜索区域 -->
+<view class="search_root">
+  <input bindconfirm='goSearch' confirm-type='search' bindinput="getSearch" class="search_input" placeholder="搜索分类" />
+  <image bindtap="goSearch" class="search_icon" src="/image/search.png" />
+</view>
+
+<!-- 九宫格区域 -->
+<view class="tab_root">
+  <view class="tab_item" bindtap="camera">
+    <image src="/image/shibie.png"></image>
+    <view>图片识别</view>
+  </view>
+  <view class="tab_item" bindtap="sound">
+    <image src="/image/yuyin.png"></image>
+    <view>语音识别</view>
+  </view>
+  <view class="tab_item" bindtap="huishou">
+    <image src="/image/huishou.png"></image>
+    <view>上门回收</view>
+  </view>
+  <view class="tab_item" bindtap="sort">
+    <image src="/image/fenlei.png"></image>
+    <view>垃圾分类</view>
+  </view>
+  <view class="tab_item" bindtap="news">
+    <image src="/image/xinwen.png"></image>
+    <view>新闻文章</view>
+  </view>
+  <view class="tab_item" bindtap="video">
+    <image src="/image/shipin.png"></image>
+    <view>科普视频</view>
+  </view>
+  <view class="tab_item" bindtap="questions">
+    <image src="/image/dati.png"></image>
+    <view>答题竞赛</view>
+  </view>
+  <view class="tab_item" bindtap="tousu">
+    <image src="/image/xiadan.png"></image>
+    <view>投诉举报</view>
+  </view>
+</view>
+<!-- 相关视频 -->
+<view class="tip">
+  <text>科普视频</text>
+  <text class="more" bindtap="video">更多></text>
+</view>
+<view class="video_root">
+  <block wx:for="{{list}}" wx:key="index">
+    <view class="item" bindtap="goVideoDetail" data-id="{{item._id}}">
+      <image class="item_img" src="{{item.img}}" mode="aspectFill"></image>
+      <view class="item_title">{{item.title}}</view>
+      <view class="bottom">
+        <text>{{item.liulan}}浏览</text>
+        <text class="shoucang">{{item.shoucang}}收藏</text>
+      </view>
+    </view>
+  </block>
+</view>

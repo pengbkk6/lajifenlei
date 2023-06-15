@@ -1,0 +1,14 @@
+<view class="title">做题总数：{{total}}</view>
+<view class="title">错题总数：{{errTotal}}</view>
+
+<view wx:if="{{list&&list.length>0}}">
+    <view class="title">总的正确率：{{zongZhengquelv}}%</view>
+    <view class="title">各种类型题目的正确率如下</view>
+    <block wx:for="{{list}}" wx:key="index">
+        <view class="item">
+            <text class="item_left">{{item.type}}:</text>
+            做对{{item.rigthNum}},做错{{item.errNum}}
+            正确率{{item.zhengquelv}}%
+        </view>
+    </block>
+</view>

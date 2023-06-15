@@ -1,0 +1,28 @@
+<!-- 搜索区域 -->
+<view class="search_root">
+  <input value='{{searchKey}}' bindconfirm='goSearch' confirm-type='search' bindinput="getSearch" class="search_input" placeholder="请输入要搜索的东西" />
+  <image bindtap="goSearch" class="search_icon" src="../../image/search.png" />
+</view>
+<!-- 顶部导航栏 -->
+<view class="tabs_root">
+  <view class="tabs_item {{currentTab==index?'select_tab':''}}" wx:for="{{tabs}}" wx:key="index" bindtap="selectTab" data-index="{{index}}">
+    {{item}}
+  </view>
+</view>
+<!-- 垃圾列表 -->
+<view wx:if="{{currentTab==0}}">
+  <view wx:for="{{refuseList}}" class="refuse_item">
+    <text>{{item.name}}</text>
+    <text class="refuse_item_type">（{{item.type}}）</text>
+  </view>
+</view>
+<!-- 文章列表 -->
+<view wx:else>
+  <view wx:for="{{list}}" class="item" bindtap="goForumDetail" data-id="{{item._id}}">
+    <image class="item_img" src="{{item.img}}"></image>
+    <view>
+      <view class="item_title">{{item.title}}</view>
+      <view class="item_type">类型:{{item.type}}</view>
+    </view>
+  </view>
+</view>
